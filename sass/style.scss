@@ -1,5 +1,7 @@
 @import "../vendor/bootstrap-grid.min.css";
-@import "sections/variables";
-@import "sections/mixins";
-@import "sections/normalize";
-@import "sections/layout";
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
+
+@import "sections/sidePan"
