@@ -9,6 +9,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -347,9 +348,20 @@ template {
   padding: 0px;
 }
 
+.sidePan .title {
+  padding-left: 15px;
+}
+
 .sidePan .title .doIt {
-  font-family: Trattatello, fantasy;
-  font-size: 33px;
+  font-family: Pacifico, fantasy;
+  font-size: 22px;
+  color: #F5F5F2;
+  height: 60px;
+  line-height: 60px;
+}
+
+.sidePan .title a {
+  padding-left: 25px;
 }
 
 .sidePan ul {

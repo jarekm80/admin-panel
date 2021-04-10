@@ -3,9 +3,16 @@
     min-height: 100vh;
     padding: 0px;
     .title{
+        padding-left: 15px;
         .doIt{
-            font-family: Trattatello, fantasy;
-            font-size: 33px;
+            font-family: Pacifico, fantasy;
+            font-size: 22px;
+            color: $grey5;
+            height: 60px;
+            line-height: 60px;
+        }
+        a{
+            padding-left: 25px;
         }
     }
     ul{
