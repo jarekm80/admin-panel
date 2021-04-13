@@ -1,0 +1,22 @@
+
+.sec_genStats{
+    .comp_formDate{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .comp_btnRefresh{
+            width: 30px;
+            height: 30px;
+            background-color: $yellowDark;
+            border: 0px;
+            display: inline;
+            img{
+                height: 20px;
+                filter: invert(1);
+                display: block;
+                margin: auto;
+            }    
+        }
+    }
+}

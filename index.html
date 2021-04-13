@@ -3,12 +3,13 @@
   <head>
 	<meta charset="UTF-8">
     <title>Admin panel</title>
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 fixed sidePan">
+        <div class="col-2 fixed sec_sidePan">
           <div class="title">
             <span class="doIt">Just do it</span>
             <a href="#">
@@ -85,10 +86,39 @@
             </li>
           </ul>
         </div>
-        <div class="col">
-          content
+        <div class="col content">
+          <div class="sec_topPan">
+            <div class="freeSpace"></div>
+            <div class="comp_boxInTop">
+              <img class="imgBig" id="wallet" src="/images/icons/wallet.svg">
+              <span id="cash">$1500,00</span>
+              <img class="imgSmall" src="/images/icons/arrow-down.svg">
+            </div>
+            <div class="comp_boxInTop">
+              <img id="bell" src="images/icons/bellWithDot.png">
+            </div>
+            <div class="comp_boxInTop">
+              <img class="imgBig" id="profileImg" src="images/icons/profile.svg">
+              <span id="profile">Hakuna Matata</span>
+            </div>
+            <div class="comp_boxInTop">
+              <img class="imgBig" src="images/icons/quit.svg">
+            </div>
+          </div>
+          <div class="sec_genStats">
+            <div class="comp_formDate">
+              <input type="text" name="dateStart">
+              <input type="text" name="dateEnd">
+              <button class="comp_btnRefresh">
+                <img src="images/icons/refresh.svg">
+              </button>
+            </div>
+            genStats
+          </div>  
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

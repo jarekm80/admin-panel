@@ -4,5 +4,12 @@
 @import "normalize";
 @import "layout";
 
+body {background-color: $mild}
+.content{
+    padding: 0px !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import "sections/sidePan"
+@import "sections/sidePan";
+@import "sections/topPan";
+@import "sections/genStats";
