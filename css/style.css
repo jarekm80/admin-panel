@@ -496,10 +496,33 @@ body {
   height: 20px;
 }
 
+.sec_genStats {
+  margin: 10px;
+  background-color: white;
+}
+
 .sec_genStats .comp_formDate {
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.sec_genStats .comp_formDate input {
+  height: 30px;
+  outline: none;
+  width: 150px;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.sec_genStats .comp_formDate #dateEnd {
+  background-image: url("../../images/icons/calendar.svg");
+  background-position: 120px 5px;
+  background-repeat: no-repeat;
+  background-size: 15px;
 }
 
 .sec_genStats .comp_formDate .comp_btnRefresh {
@@ -507,7 +530,9 @@ body {
   height: 30px;
   background-color: #F58220;
   border: 0px;
+  border-radius: 5px;
   display: inline;
+  margin-left: 10px;
 }
 
 .sec_genStats .comp_formDate .comp_btnRefresh img {

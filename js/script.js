@@ -4,8 +4,9 @@ const app = {
     const thisDates=this;
 
     thisDates.dom={};
-    thisDates.dom.dateStart = document.querySelector(`input[name="dateStart"]`);
-    thisDates.dom.dateEnd =   document.querySelector(`input[name="dateEnd"]`);
+    //thisDates.dom.dateStart = document.querySelector(`input[name="dateStart"]`);
+    thisDates.dom.dateStart = document.querySelector('#dateStart');
+    thisDates.dom.dateEnd =   document.querySelector('#dateEnd');
     thisDates.defDate = new Date();
     // eslint-disable-next-line no-undef
     flatpickr(thisDates.dom.dateStart,{defaultDate: thisDates.defDate,});
