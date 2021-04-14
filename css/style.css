@@ -497,8 +497,13 @@ body {
 }
 
 .sec_genStats {
+  -webkit-box-shadow: 0px 0px 3px 0px #aaaaaa;
+  -moz-box-shadow: 0px 0px 3px 0px #aaaaaa;
+  box-shadow: 0px 0px 3px 0px #aaaaaa;
   margin: 10px;
   background-color: white;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 15px;
 }
 
 .sec_genStats .comp_formDate {
@@ -519,11 +524,24 @@ body {
   padding-left: 10px;
 }
 
+.sec_genStats .comp_formDate #dateStart {
+  border-top: 1px solid #AAAAAA;
+  border-left: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
 .sec_genStats .comp_formDate #dateEnd {
   background-image: url("../../images/icons/calendar.svg");
   background-position: 120px 5px;
   background-repeat: no-repeat;
   background-size: 15px;
+  border-bottom: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+  border-top: 1px solid #AAAAAA;
+  border-left: 1px solid #AAAAAA;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .sec_genStats .comp_formDate .comp_btnRefresh {
@@ -550,18 +568,35 @@ body {
   justify-content: center;
   min-height: 100%;
   border-bottom: 1px solid #E3E3E3;
+  flex-wrap: wrap;
+  flex-flow: wrap;
 }
 
 .sec_genStats .comp_totalSummary .comp_rowSummary {
-  width: calc(70%);
-  background-color: red;
+  width: 700px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-flow: wrap;
 }
 
 .sec_genStats .comp_totalSummary .comp_rowSummary .comp_infoSummary {
   width: 300px;
+  justify-content: space-between;
+  display: inline-flex;
+  border-bottom: 1px #E3E3E3 solid;
+  padding: 10px 0 4px 0;
+}
+
+.sec_genStats .comp_totalSummary .comp_rowSummary .comp_infoSummary .comp_textInInfoSummary {
+  text-align: left;
+  color: #979797;
+  font-weight: 600;
+}
+
+.sec_genStats .comp_totalSummary .comp_rowSummary .comp_infoSummary .comp_numberInInfoSummary {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
