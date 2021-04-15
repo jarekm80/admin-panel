@@ -7,6 +7,33 @@
     background-color: white;
     font-family: $brand-font;
     font-size: 15px;
+    #genStatsText{
+        font-family: $brand-font;
+        font-size: 17px;
+        font-weight: 500;
+        color: $grey3;
+        padding: 10px 20px;
+        border-bottom: 1px solid $grey4;
+    }
+    #earnChart{
+        padding: 10px 10px 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            width: 700px;
+            font-family: $brand-font;
+            font-size: 15px;
+            color: $grey3;
+            font-weight: 600;
+        }
+    }
+    #centeredChart{
+        display: block;
+        margin: 0px auto;
+        padding: 20px 0 30px 0;
+        width: 50%;
+    }
     .comp_formDate{
         padding: 10px;
         display: flex;
@@ -64,16 +91,12 @@
         align-items: center;
         justify-content: center;
         min-height: 100%;
-        border-bottom: 1px solid $grey4;
-        flex-wrap: wrap;
         flex-flow: wrap;
         .comp_rowSummary{
             width: 700px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
-            flex-flow: wrap;
             .comp_infoSummary{
                 width: 300px;
                 justify-content: space-between;
@@ -91,5 +114,36 @@
             }
 
         }
-      }
+    }
+
+    .comp_btnWrapper{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .comp_centerBtn{
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            button{
+                border: none;
+                border-radius: 5px;;
+                padding: 5px 10px;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+                span{
+                    margin: 0px 10px;
+                    position: relative;
+                    top: -3px;
+                    left: 5px;
+                    
+                }
+            }
+            .notChecked{
+                background-color: white;
+            }
+        }
+    }
 }

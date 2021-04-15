@@ -506,6 +506,37 @@ body {
   font-size: 15px;
 }
 
+.sec_genStats #genStatsText {
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 17px;
+  font-weight: 500;
+  color: #979797;
+  padding: 10px 20px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.sec_genStats #earnChart {
+  padding: 10px 10px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec_genStats #earnChart p {
+  width: 700px;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 15px;
+  color: #979797;
+  font-weight: 600;
+}
+
+.sec_genStats #centeredChart {
+  display: block;
+  margin: 0px auto;
+  padding: 20px 0 30px 0;
+  width: 50%;
+}
+
 .sec_genStats .comp_formDate {
   padding: 10px;
   display: flex;
@@ -567,8 +598,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  border-bottom: 1px solid #E3E3E3;
-  flex-wrap: wrap;
   flex-flow: wrap;
 }
 
@@ -577,8 +606,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  flex-flow: wrap;
 }
 
 .sec_genStats .comp_totalSummary .comp_rowSummary .comp_infoSummary {
@@ -597,6 +624,41 @@ body {
 
 .sec_genStats .comp_totalSummary .comp_rowSummary .comp_infoSummary .comp_numberInInfoSummary {
   text-align: right;
+}
+
+.sec_genStats .comp_btnWrapper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec_genStats .comp_btnWrapper .comp_centerBtn {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec_genStats .comp_btnWrapper .comp_centerBtn button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sec_genStats .comp_btnWrapper .comp_centerBtn button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sec_genStats .comp_btnWrapper .comp_centerBtn button span {
+  margin: 0px 10px;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+.sec_genStats .comp_btnWrapper .comp_centerBtn .notChecked {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
