@@ -1,4 +1,5 @@
 .sec_links{
+    
     #linksText{
         font-family: $brand-font;
         font-size: 17px;
@@ -9,13 +10,14 @@
     }
     #lastBtn{
         padding-bottom: 40px;
+
     }
     .comp_btnWrapAddNew{
         padding: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        button{
+            button{
             background-color: $yellowDark;
             border: none;
             border-radius: 5px;
