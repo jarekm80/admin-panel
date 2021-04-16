@@ -1,0 +1,89 @@
+.sec_links{
+    #linksText{
+        font-family: $brand-font;
+        font-size: 17px;
+        font-weight: 500;
+        color: $grey3;
+        padding: 10px 20px;
+        border-bottom: 1px solid $grey4;
+    }
+    #lastBtn{
+        padding-bottom: 40px;
+    }
+    .comp_btnWrapAddNew{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            background-color: $yellowDark;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: $grey5;
+        }
+    }
+    .comp_groupedLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+        padding-bottom: 10px;
+        .comp_link{
+            width: 700px;
+            height: 40px;
+            border-top: 1px $grey2 solid;
+            span{
+                position: relative;
+                left: 20px;
+                top: 10px;
+                width: 150px;
+                color: $grey3;
+                font-weight: 600;
+                display: inline-block;
+            }
+            a{
+                color: $blueDark;
+                text-decoration: none;
+                position: relative;
+                top: 10px;
+                left: 50px;
+                width:150px;
+                display: inline-block;
+            }
+            .imgLinks{
+                position: relative;
+                top: 10px;
+                left: 320px;
+                width: 20px;
+                filter: invert(51%) sepia(93%) saturate(674%) hue-rotate(346deg) brightness(99%) contrast(95%);
+                display: none;
+            }
+            .imgTrash{
+                position: relative;
+                top: 10px;
+                left: 330px;
+                height: 17px;
+                display: none;
+            }
+        }
+        .comp_link:hover{
+            background-color: $grey4;
+            span{
+                top: 7px;
+            }
+            a{
+                top: 7px;
+            }
+            .imgLinks{
+                display: inline-block;
+            }
+            .imgTrash{
+                display: inline-block;
+            }
+        }
+        #lastLink{
+            border-bottom: 1px $grey2 solid;
+        }
+    }
+}
