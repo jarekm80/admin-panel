@@ -2,7 +2,7 @@
     background-color: $grey1;
     min-height: 100vh;
     padding: 0px;
-
+    position:fixed;
     .title{
         padding-left: 5px;
         display: flex;
@@ -68,3 +68,4 @@
         }
     }
 }
+

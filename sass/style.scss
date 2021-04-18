@@ -1,10 +1,14 @@
+
+
 @import "../vendor/bootstrap-grid.min.css";
 @import "variables";
 @import "mixins";
 @import "normalize";
 @import "layout";
 
+
 body {background-color: $mild}
+
 .content{
     padding: 0px !important;
 }
@@ -22,4 +26,5 @@ body {background-color: $mild}
 @import "sections/sidePan";
 @import "sections/topPan";
 @import "sections/genStats";
-@import "sections/links"
+@import "sections/links";
+

@@ -364,6 +364,7 @@ body {
   background-color: #333333;
   min-height: 100vh;
   padding: 0px;
+  position: fixed;
 }
 
 .sec_sidePan .title {
@@ -440,6 +441,10 @@ body {
 .sec_topPan {
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 83.33%;
 }
 
 .sec_topPan .freeSpace {
@@ -504,6 +509,10 @@ body {
 
 .sec_topPan .comp_boxInTop #profileImg {
   height: 20px;
+}
+
+.sec_genStats {
+  margin-top: 60px;
 }
 
 .sec_genStats #genStatsText {

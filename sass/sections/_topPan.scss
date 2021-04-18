@@ -1,6 +1,10 @@
 .sec_topPan{
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 83.33%;
     .freeSpace{
         flex: 1;
         height: 50px;
