@@ -774,4 +774,10 @@ body {
   border-bottom: 1px #666666 solid;
 }
 
+@media (max-width: 500px) {
+  .sec_sidePan {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
