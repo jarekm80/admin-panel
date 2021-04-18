@@ -364,6 +364,7 @@ body {
   background-color: #333333;
   min-height: 100vh;
   padding: 0px;
+  position: fixed;
 }
 
 .sec_sidePan .title {
@@ -763,6 +764,12 @@ body {
 
 .sec_links .comp_groupedLinks #lastLink {
   border-bottom: 1px #666666 solid;
+}
+
+@media (max-width: 500px) {
+  .sec_sidePan {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

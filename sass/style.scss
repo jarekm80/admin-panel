@@ -22,4 +22,10 @@ body {background-color: $mild}
 @import "sections/sidePan";
 @import "sections/topPan";
 @import "sections/genStats";
-@import "sections/links"
+@import "sections/links";
+
+@media (max-width: 500px) {
+    .sec_sidePan{
+        background-color: violet;
+    }
+}
