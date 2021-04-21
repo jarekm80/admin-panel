@@ -21,3 +21,14 @@ const app = {
 };
 
 app.init();
+
+function toggleMenu(visible) {
+  document.querySelector('.sec_sidePan').classList.toggle('show', visible);
+  console.log('toggleMenu');
+}
+
+document.querySelector('.hamburger').addEventListener('click', function(e) {
+  e.preventDefault();
+
+  toggleMenu();
+});

@@ -28,8 +28,9 @@ body {background-color: $mild}
 @import "sections/genStats";
 @import "sections/links";
 
-@media (max-width: 500px) {
-    .sec_sidePan{
-        background-color: violet;
+@media (max-width: 576px) {
+
+    .sec_content{
+        width: calc(100% - 50px);
     }
 }

@@ -142,3 +142,16 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .sec_genStats{
+        margin-top: 120px;
+        .comp_rowSummary{
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center !important;
+            align-items: center !important;
+        }    
+    }    
+}

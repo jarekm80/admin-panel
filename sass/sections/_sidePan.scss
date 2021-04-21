@@ -67,5 +67,25 @@
             }
         }
     }
+
 }
 
+@media (max-width: 576px) {
+    .sec_sidePan{
+        width: 100%;
+        z-index: 1;
+        height: 60px;
+        line-height: 60px;
+        min-height: auto;
+        ul{
+            display: none;
+        }
+    }
+    .show {
+        min-height: 100vh;
+        ul{
+            display: initial;
+            z-index: 1;
+        }
+    }
+}

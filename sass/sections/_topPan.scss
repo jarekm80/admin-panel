@@ -14,7 +14,7 @@
     .comp_boxInTop{
         margin: 0 2px;
         height: 50px;
-        line-height: 40px;
+        line-height: 50px;
         background-color: white;
         justify-content: center;
         align-items: center;
@@ -61,4 +61,57 @@
         }
     }    
 
+}
+
+
+@media (max-width: 576px) {
+    .sec_topPan{
+        top: 60px;
+        right: 60px;
+        justify-content: space-between;
+        width: calc(100% - 60px);
+        background-color: white;
+        .comp_boxInTop{
+            .imgBig{
+                height: 20px;
+                position: relative;
+                top: -3px;
+            }
+            .imgSmall{
+                width: 17px;
+
+            }
+            #bell{
+                filter: opacity(100%) !important;
+                padding: 0 5px;
+                background-color: white;  
+            }
+            #wallet{
+                top: -5px;
+                height: 21px;
+            }
+            #cash{
+                font-family: $brand-font;
+                font-size: 17px;
+                font-weight: bold;
+                color: $grey3;
+                margin: 0 5px;
+            }
+            #profile{
+                font-family: $brand-font;
+                font-size: 16px;
+                font-weight: normal;
+                color: $blueDark;
+                margin: 2px 5px 0px 5px;
+            }
+            #profileImg{
+                height: 22px;
+            }
+        }
+    }
+    .freeSpace{
+        display: none;
+        width: 0px;
+        max-width: 0px;
+    }
 }
