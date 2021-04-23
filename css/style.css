@@ -390,6 +390,7 @@ body {
   padding-inline-start: 0px !important;
   margin-block-end: 0px !important;
   margin-block-start: 0px !important;
+  display: inline-block;
 }
 
 .sec_sidePan ul li {
@@ -422,6 +423,7 @@ body {
   width: 20px;
   position: relative;
   top: 8px;
+  filter: invert(100%);
 }
 
 .sec_sidePan ul li a .textInSidePan {
@@ -438,6 +440,32 @@ body {
   fill: #F58220;
 }
 
+.sec_sidePan #yourManager {
+  border-top: 1px solid #666666;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 15px;
+}
+
+.sec_sidePan #yourManager p {
+  margin-block-start: 0.5em !important;
+  margin-block-end: 0.5em !important;
+  color: #E3E3E3;
+}
+
+.sec_sidePan #yourManager #inYM {
+  height: 44px;
+  line-height: 44px;
+}
+
+.sec_sidePan #yourManager #inYM span {
+  color: #56819F;
+  position: relative;
+  left: 0px;
+  top: -16px;
+}
+
 @media (max-width: 576px) {
   .sec_sidePan {
     width: 100%;
@@ -449,11 +477,21 @@ body {
   .sec_sidePan ul {
     display: none;
   }
+  .sec_sidePan ul li a {
+    height: 35px;
+  }
+  .sec_sidePan ul li a img {
+    top: -7px;
+  }
+  .sec_sidePan ul li a .textInSidePan {
+    top: -10px;
+    font-size: 20px;
+  }
   .show {
     min-height: 100vh;
   }
   .show ul {
-    display: initial;
+    display: inline-block;
     z-index: 1;
   }
 }
@@ -750,6 +788,9 @@ body {
     flex-direction: column;
     justify-content: center !important;
     align-items: center !important;
+  }
+  .sec_genStats #centeredChart {
+    width: auto;
   }
 }
 

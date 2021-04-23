@@ -26,6 +26,7 @@
         padding-inline-start: 0px !important;
         margin-block-end: 0px !important;
         margin-block-start: 0px !important;
+        display: inline-block;
         li{
             list-style: none;
             margin: 0px;
@@ -50,6 +51,7 @@
                     width: 20px;
                     position: relative;
                     top: 8px;
+                    filter: invert(100%);
                 }
                 .textInSidePan{
                     position: relative;
@@ -67,7 +69,29 @@
             }
         }
     }
+    #yourManager{
+        border-top: 1px solid $grey2;
+        margin-top: 20px;
+        padding: 10px;
+        font-family: $brand-font;
+        font-size: 15px;
+        p{
+            margin-block-start: 0.5em !important;
+            margin-block-end: 0.5em !important;
+            color: $grey4;
 
+        }
+        #inYM{
+            height: 44px;
+            line-height: 44px;
+            span{
+                color: $blueDark;
+                position: relative;
+                left: 0px;
+                top: -16px;
+            }
+        }    
+    }
 }
 
 @media (max-width: 576px) {
@@ -79,12 +103,24 @@
         min-height: auto;
         ul{
             display: none;
+            li{
+                a{
+                    height: 35px;
+                    img{
+                        top: -7px;
+                    }
+                    .textInSidePan{
+                        top: -10px;
+                        font-size: 20px;
+                    }    
+                }
+            }
         }
     }
     .show {
         min-height: 100vh;
         ul{
-            display: initial;
+            display: inline-block;
             z-index: 1;
         }
     }
