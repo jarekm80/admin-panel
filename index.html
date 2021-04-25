@@ -8,6 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <div class="overlay" id="overlay">
+      <div class="modal" id="modalYourManager">
+        <div class="btn-close js--close-modal">x</div>
+        <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
+        <div id="infoInModal">
+          <img srcset="./images/yourManager.png" alt="Your manager">
+          <span>Developer W.</span>
+        </div>
+        <div class="comp_dialogContainer">
+          <p class="dialog answer">
+            What was Your question ?
+          </p>
+        </div>  
+        <div class="comp_dialogContainer">
+          <p class="dialog response">
+            Who is asking ?
+          </p>
+        </div>
+        <div class="comp_dialogContainer last">
+          <p class="dialog answer">
+            Belzebub
+          </p>
+        </div>
+        <form action="" method="POST" novalidate>
+          <div id="formInModal">
+            <input type="text" name="message">
+            <button class="js--close-modal">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-2 sec_sidePan">
@@ -59,7 +90,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="personal.html">
                 <svg>
                   <rect width="10" height="35" class="yellowSpace" />
                 </svg>
@@ -213,6 +244,43 @@
                 <span>+ add new</span>
               </button>
             </div>
+          </div>
+          <div class="sec_person sec_content">
+            <div id="personText">
+              <p>PERSONAL DATA</p>
+            </div>
+            <form action="" method="POST" novalidate>
+              <div class="comp_fieldInForm">
+                <label>Name</label>
+                <input type="text" name="name">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>Surname</label>
+                <input type="text" name="surname">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>e-mail</label>
+                <input type="email" name="email">
+              </div>
+              <div class="comp_fieldInForm lastInGroup">
+                <label>Phone</label>
+                <input type="text" name="phone">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>Password</label>
+                <input type="password" name="pass">
+              </div>
+              <div class="comp_fieldInForm lastInGroup">
+                <label>Repeat</label>
+                <input type="password" name="repeatPass">
+              </div>
+
+              <div class="comp_btnWrapSave">
+                <button type="submit">
+                  <span>Save</span>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
     </div>

@@ -342,8 +342,137 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f1f3f3;
+  text-decoration: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+#modalYourManager {
+  width: 575px;
+}
+
+#modalYourManager .btn-close {
+  font: bold 20px "Open Sans", Helvetica, Arial;
+  color: #F58220;
+  cursor: pointer;
+}
+
+#modalYourManager h4 {
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 16px;
+  font-weight: 500 !important;
+  color: #979797;
+  padding: 10px 20px;
+  border-bottom: 1px solid #E3E3E3;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#modalYourManager #infoInModal {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+#modalYourManager #infoInModal span {
+  color: #56819F;
+  position: relative;
+  left: 0px;
+  top: -16px;
+}
+
+#modalYourManager .comp_dialogContainer {
+  margin: 2px 0;
+}
+
+#modalYourManager .comp_dialogContainer .dialog {
+  font-family: "Open Sans", Helvetica, Arial;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#modalYourManager .comp_dialogContainer .answer {
+  background-color: #f1f3f3;
+  color: #666666;
+}
+
+#modalYourManager .comp_dialogContainer .response {
+  background-color: #979797;
+  color: #F5F5F2;
+}
+
+#modalYourManager .last {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+#modalYourManager #formInModal {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#modalYourManager #formInModal input {
+  padding: 5px;
+  color: #666666;
+  width: calc(100% - 90px);
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+
+#modalYourManager #formInModal button {
+  background-color: #F58220;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #F5F5F2;
+  cursor: pointer;
 }
 
 .content {
@@ -391,6 +520,7 @@ body {
   margin-block-end: 0px !important;
   margin-block-start: 0px !important;
   display: inline-block;
+  width: 100%;
 }
 
 .sec_sidePan ul li {
@@ -442,6 +572,7 @@ body {
 
 .sec_sidePan #yourManager {
   border-top: 1px solid #666666;
+  cursor: pointer;
   margin-top: 20px;
   padding: 10px;
   font-family: "Open Sans", Helvetica, Arial;
@@ -493,6 +624,9 @@ body {
   .show ul {
     display: inline-block;
     z-index: 1;
+  }
+  #yourManager {
+    display: none;
   }
 }
 
@@ -895,6 +1029,76 @@ body {
 
 .sec_links .comp_groupedLinks #lastLink {
   border-bottom: 1px #666666 solid;
+}
+
+.sec_person {
+  font-family: "Open Sans", Helvetica, Arial;
+}
+
+.sec_person #personText {
+  font-size: 17px;
+  font-weight: 500;
+  color: #979797;
+  padding: 10px 20px;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.sec_person form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: 10px;
+}
+
+.sec_person form .comp_fieldInForm {
+  width: 700px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.sec_person form .comp_fieldInForm label {
+  position: relative;
+  left: 20px;
+  top: 0px;
+  width: 200px;
+  color: #979797;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.sec_person form .comp_fieldInForm input {
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.sec_person form .lastInGroup {
+  border-bottom: 1px solid #E3E3E3;
+  padding-bottom: 55px;
+  margin-bottom: 5px;
+}
+
+.sec_person form .comp_btnWrapSave {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.sec_person form .comp_btnWrapSave button {
+  background-color: #F58220;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #F5F5F2;
+}
+
+.sec_person form .comp_btnWrapSave button span {
+  color: #F5F5F2;
 }
 
 @media (max-width: 576px) {

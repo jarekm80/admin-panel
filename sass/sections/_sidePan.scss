@@ -27,6 +27,7 @@
         margin-block-end: 0px !important;
         margin-block-start: 0px !important;
         display: inline-block;
+        width: 100%;
         li{
             list-style: none;
             margin: 0px;
@@ -71,6 +72,7 @@
     }
     #yourManager{
         border-top: 1px solid $grey2;
+        cursor: pointer;
         margin-top: 20px;
         padding: 10px;
         font-family: $brand-font;
@@ -91,7 +93,9 @@
                 top: -16px;
             }
         }    
+
     }
+
 }
 
 @media (max-width: 576px) {
@@ -123,5 +127,8 @@
             display: inline-block;
             z-index: 1;
         }
+    }
+    #yourManager{
+        display: none;
     }
 }

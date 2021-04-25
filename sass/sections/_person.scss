@@ -1,0 +1,60 @@
+.sec_person{
+    font-family: $brand-font;
+    #personText{
+        font-size: 17px;
+        font-weight: 500;
+        color: $grey3;
+        padding: 10px 20px;
+        border-bottom: 1px solid $grey4;
+    }
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: wrap;
+        padding: 10px;
+        .comp_fieldInForm{
+            width: 700px;
+            height: 50px;
+            line-height: 50px;
+            label{
+                position: relative;
+                left: 20px;
+                top: 0px;
+                width: 200px;
+                color: $grey3;
+                font-weight: 600;
+                display: inline-block;
+            }
+            input{
+                border: 1px solid $grey4;
+                border-radius: 5px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                outline: none;
+            }
+        }
+        .lastInGroup{
+            border-bottom: 1px solid $grey4; 
+            padding-bottom: 55px;
+            margin-bottom: 5px;
+        }
+        .comp_btnWrapSave{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 700px;
+                button{
+                background-color: $yellowDark;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                color: $grey5;
+                span{
+                    color: $grey5;
+                }
+            }
+        }
+    }
+}
