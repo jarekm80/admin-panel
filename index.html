@@ -10,7 +10,7 @@
   <body>
     <div class="overlay" id="overlay">
       <div class="modal" id="modalYourManager">
-        <div class="btn-close js--close-modal">x</div>
+        <div class="btn-close js--close-modal">X</div>
         <h4>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h4>
         <div id="infoInModal">
           <img srcset="./images/yourManager.png" alt="Your manager">
@@ -182,6 +182,7 @@
             <div id="earnChart">
               <p>Earnings chart</p>
             </div>
+            <!--
             <div class="comp_btnWrapper">
               <div class="comp_centerBtn">
                 <button class="showColumn">
@@ -204,11 +205,19 @@
                 </button>
               </div>
             </div>
+            -->
+            <div class="comp_chartWrapper">
+              <div class="comp_centeredChart">
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>  
+            <!--
             <img 
               src="./images/chart.jpg"
               srcset="./images/chart_small.jpg 576w"
               alt="chart"
               id="centeredChart">
+            -->
           </div>
           <div class="sec_links sec_content">
             <div id="linksText">
@@ -285,6 +294,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

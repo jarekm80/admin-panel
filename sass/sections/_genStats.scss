@@ -22,12 +22,20 @@
             font-weight: 600;
         }
     }
-    #centeredChart{
-        display: block;
-        margin: 0px auto;
-        padding: 20px 0 30px 0;
-        width: 50%;
+    .comp_chartWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .comp_centeredChart{
+            width: 75%;
+        }
     }
+//    #centeredChart{
+//        display: block;
+//        margin: 0px auto;
+//        padding: 20px 0 30px 0;
+//        width: 50%;
+//    }
     .comp_formDate{
         padding: 10px;
         display: flex;
