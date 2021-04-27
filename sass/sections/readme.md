@@ -1,0 +1,1 @@
+https://jarekm80.github.io/admin-panel/
