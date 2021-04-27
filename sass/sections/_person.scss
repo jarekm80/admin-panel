@@ -1,4 +1,23 @@
+.comp_btnWrap{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+        button{
+        background-color: $yellowDark;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: $grey5;
+        span{
+            color: $grey5;
+        }
+    }
+}
+
 .sec_person{
+    margin-top: 60px;
     font-family: $brand-font;
     #personText{
         font-size: 17px;

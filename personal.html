@@ -57,7 +57,7 @@
           </div>
           <ul>
             <li>
-              <a href="#">
+              <a href="index.html">
                 <svg focusable="false">
                   <rect width="10" height="35" class="yellowSpace" />
                 </svg>
@@ -147,115 +147,43 @@
               <img class="imgBig" src="images/icons/quit.svg" alt="quit">
             </div>
           </div>
-          <div class="sec_genStats sec_content">
-            <div id="genStatsText">
-              <p>GENERAL STATISTIC</p>
+
+          <div class="sec_person sec_content">
+            <div id="personText">
+              <p>PERSONAL DATA</p>
             </div>
-            <div class="comp_formDate">
-              <input type="text" id="dateStart">
-              <input type="text" id="dateEnd">
-              <button type="button" class="comp_btnRefresh">
-                <img src="images/icons/refresh.svg" alt="refreshBtn">
-              </button>
-            </div>
-            <div class="comp_totalSummary">
-              <div class="comp_rowSummary">
-                <div class="comp_infoSummary">
-                  <div class="comp_textInInfoSummary">Visit Signups</div>
-                  <div class="comp_numberInInfoSummary">123</div>
-                </div>
-                <div class="comp_infoSummary">
-                  <div class="comp_textInInfoSummary">Net deposit</div>
-                  <div class="comp_numberInInfoSummary">234</div>
-                </div>
+            <form action="" method="post" novalidate>
+              <div class="comp_fieldInForm">
+                <label>Name</label>
+                <input type="text" name="name">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>Surname</label>
+                <input type="text" name="surname">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>e-mail</label>
+                <input type="email" name="email">
+              </div>
+              <div class="comp_fieldInForm lastInGroup">
+                <label>Phone</label>
+                <input type="text" name="phone">
+              </div>
+              <div class="comp_fieldInForm">
+                <label>Password</label>
+                <input type="password" name="pass">
+              </div>
+              <div class="comp_fieldInForm lastInGroup">
+                <label>Repeat</label>
+                <input type="password" name="repeatPass">
               </div>
 
-              <div class="comp_rowSummary">
-                <div class="comp_infoSummary">
-                  <div class="comp_textInInfoSummary">FTD</div>
-                  <div class="comp_numberInInfoSummary">768</div>
-                </div>
-                <div class="comp_infoSummary">
-                  <div class="comp_textInInfoSummary">Turn over</div>
-                  <div class="comp_numberInInfoSummary">687</div>
-                </div>
-              </div>
-
-            </div>
-            <div id="earnChart">
-              <p>Earnings chart</p>
-            </div>
-            <!--
-            <div class="comp_btnWrapper">
-              <div class="comp_centerBtn">
-                <button class="showColumn">
-                  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="10" fill="#80bfca" />
-                  </svg>
-                  <span>Signups</span>
-                </button>
-                <button class="showColumn">
-                  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="10" fill="#ff9a38" />
-                  </svg>
-                  <span>FTD</span>
-                </button>
-                <button class="showColumn notChecked">
-                  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="10" cy="10" r="10" fill="#59b66d" />
-                  </svg>
-                  <span>Earned</span>
+              <div class="comp_btnWrap">
+                <button type="submit">
+                  <span>Save</span>
                 </button>
               </div>
-            </div>
-            -->
-            <div class="comp_chartWrapper">
-              <div class="comp_centeredChart">
-                <canvas id="myChart"></canvas>
-              </div>
-            </div>
-            <!--
-            <img 
-              src="./images/chart.jpg"
-              srcset="./images/chart_small.jpg 576w"
-              alt="chart"
-              id="centeredChart">
-            -->
-          </div>
-          <div class="sec_links sec_content">
-            <div id="linksText">
-              <p>LINKS</p>
-            </div>
-            <div class="comp_btnWrap">
-              <button type="button">
-                <span>+ add new</span>
-              </button>
-            </div>
-            <div class="comp_groupedLinks">
-              <div class="comp_link">
-                <span>Home page</span>
-                <a href="#">http://www.homepage.com</a>
-                <img src="images/icons/links.svg" class="imgLinks" alt="imgLinks">
-                <img src="images/icons/trash.svg" class="imgTrash" alt="imgTrash">
-              </div>
-              <div class="comp_link">
-                <span>Currently offer</span>
-                <a href="#">http://www.currentlyoffer.com</a>
-                <img src="images/icons/links.svg" class="imgLinks" alt="imgLinks">
-                <img src="images/icons/trash.svg" class="imgTrash" alt="imgTrash">
-              </div>
-              <div class="comp_link" id="lastLink">
-                <span>Twitter</span>
-                <a href="#">http://www.twitter.com</a>
-                <img src="images/icons/links.svg" class="imgLinks" alt="imgLinks">
-                <img src="images/icons/trash.svg" class="imgTrash" alt="imgTrash">
-              </div>
-            </div>
-            <div class="comp_btnWrap" id="lastBtn">
-              <button type="button">
-                <span>+ add new</span>
-              </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
